@@ -4,7 +4,7 @@ const part1 = vals => {
     for (const x of vals) {
         for (const y of vals) {
            if(x !== y && x + y === 2020) {
-              return 'answer is ' + x * y + ' (from ' + x + ' and ' + y + ')';
+              return x * y;
            }
         }   
     }
@@ -17,7 +17,7 @@ const part2 = vals => {
         for (const y of vals) {
            for (const z of vals) {
                if(x !== y && y !== z && z !== x && x + y + z === 2020) {
-                  return 'answer is ' + x * y * z + ' (from ' + x + ' and ' + y + ' and ' + z + ')';
+                  return x * y * z;
                }
             }  
         }   
